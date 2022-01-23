@@ -79,4 +79,57 @@ main .welcome_section .welcome_content .btn {
 main .welcome_section img {
   height: 50%;
 }
+
+.web_statistics {
+  font-family: "Raleway", sans-serif;
+}
+.web_statistics .statistics_title {
+  font-size: 3.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5em;
+}
+.web_statistics .info_stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 15em;
+  text-align: center;
+  position: relative;
+}
+.web_statistics .info_stats .circle {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  z-index: -1;
+}
+.web_statistics .info_stats .st {
+  background: #FB3B64;
+}
+.web_statistics .info_stats .nd {
+  background: #55DFB4;
+}
+.web_statistics .info_stats .rd {
+  background: #08A6E4;
+}
+.web_statistics .info_stats .stats_logo {
+  width: 5em;
+  position: absolute;
+  left: 35%;
+}
+.web_statistics .info_stats .stats_nr {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin-top: 4em;
+}
+.web_statistics .info_stats .stats_descriptions {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #A5A5A5;
+  margin-top: 1em;
+}
 /*# sourceMappingURL=main.css.map */
