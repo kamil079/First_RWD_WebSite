@@ -132,4 +132,10 @@ main .welcome_section img {
   color: #A5A5A5;
   margin-top: 1em;
 }
+.web_statistics :nth-of-type(2) img {
+  top: 10%;
+}
+.web_statistics :nth-of-type(3) img {
+  top: 4%;
+}
 /*# sourceMappingURL=main.css.map */
