@@ -223,4 +223,124 @@ main .welcome_section img {
   background: #55dfb4;
   border-radius: 0.5em;
 }
+
+.pricing {
+  font-family: "Raleway", sans-serif;
+}
+.pricing .pricing_container {
+  width: 93%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.pricing .pricing_container .pricing_title {
+  font-size: 4em;
+  font-weight: 400;
+  display: block;
+  order: 1;
+  margin: 1.5em;
+}
+.pricing .pricing_container .pricing_boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.pricing .pricing_container .pricing_boxes .price_box {
+  width: 90%;
+  border: 1px solid #FB3B64;
+  border-radius: 2em;
+  padding: 2em;
+  margin-bottom: 4em;
+  display: inherit;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_package {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_package .package_title {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_package .package_price {
+  font-size: 4em;
+  color: #FB3B64;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_package .package_promo {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_items {
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_items .pricing_box_item {
+  margin: 1em;
+  font-size: 1.5em;
+}
+.pricing .pricing_container .pricing_boxes .price_box .pricing_box_items .pricing_box_item:before {
+  content: "";
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  background-image: url(./../../assets/Checkmark-1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  left: -4%;
+}
+.pricing .pricing_container .pricing_boxes .price_box_btn {
+  border-radius: 2em;
+  position: absolute;
+  left: 50%;
+  top: 26%;
+  transform: translateX(-50%);
+  padding: 1.5em;
+  width: 15em;
+  background: #FB3B64;
+}
+.pricing .pricing_container .pricing_boxes .price_box_btn a {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(1) .pricing_box_items .pricing_box_item:nth-child(4)::before, .pricing .pricing_container .pricing_boxes .price_box:nth-child(1) .pricing_box_items .pricing_box_item:last-child::before {
+  content: "";
+  background-image: url(./../../assets/Close.svg);
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+  width: 95%;
+  border-color: #08A6E4;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(2) .package_price {
+  color: #08A6E4;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(2) .pricing_box_items .pricing_box_item:last-child::before {
+  content: "";
+  background-image: url(./../../assets/Close.svg);
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(2) .price_box_btn {
+  top: 59%;
+  background: #08A6E4;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(3) {
+  border-color: #55DFB4;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(3) .package_price {
+  color: #55DFB4;
+}
+.pricing .pricing_container .pricing_boxes .price_box:nth-child(3) .price_box_btn {
+  top: 92.5%;
+  background: #55DFB4;
+}
 /*# sourceMappingURL=main.css.map */
