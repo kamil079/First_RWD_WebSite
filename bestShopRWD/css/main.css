@@ -343,4 +343,98 @@ main .welcome_section img {
   top: 92.5%;
   background: #55DFB4;
 }
+
+.contact {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 6em;
+}
+.contact .contact_container {
+  width: 95%;
+  margin: 0 auto;
+}
+.contact .contact_container .contact_title {
+  font-size: 5em;
+  font-weight: 400;
+  margin-top: 1.5em;
+}
+.contact .contact_container .contact_txt {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin: 1em auto;
+  margin-bottom: 2em;
+}
+.contact .contact_container .contact_info_container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+.contact .contact_container .contact_info_container a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #A5A5A5;
+  margin-bottom: 0.5em;
+}
+.contact .contact_container .contact_info_container a img {
+  margin-right: 1em;
+  vertical-align: middle;
+}
+.contact .contact_container .contact_info_container .best_shop_nr {
+  margin-bottom: 2em;
+}
+.contact .contact_container .contact_form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact_container .contact_form .name_info,
+.contact .contact_container .contact_form .email_info {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact_container .contact_form .name_info .label_name,
+.contact .contact_container .contact_form .name_info .label_email,
+.contact .contact_container .contact_form .email_info .label_name,
+.contact .contact_container .contact_form .email_info .label_email {
+  text-transform: uppercase;
+  color: #08A6E4;
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+}
+.contact .contact_container .contact_form .name_info .input_name,
+.contact .contact_container .contact_form .name_info .input_email,
+.contact .contact_container .contact_form .email_info .input_name,
+.contact .contact_container .contact_form .email_info .input_email {
+  font-size: 2em;
+  line-height: 2em;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.contact .contact_container .contact_form .consent_area {
+  font-family: "Open Sans", sans-serif;
+}
+.contact .contact_container .contact_form .consent_area .form_checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.contact .contact_container .contact_form .consent_area .form_checkbox input {
+  height: 2.5em;
+  width: 40em;
+}
+.contact .contact_container .contact_form .consent_area .form_checkbox .consent_txt {
+  color: #A5A5A5;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+.contact .contact_container .contact_form .btn_consent_send {
+  color: #ffffff;
+  background: #08a6e4;
+  padding: 1.5em;
+  margin: 2em;
+  margin-left: 12em;
+  font-size: 1.3em;
+  font-weight: 600;
+  width: 60%;
+  border-radius: 4em;
+}
 /*# sourceMappingURL=main.css.map */
