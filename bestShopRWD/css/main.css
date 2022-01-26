@@ -346,7 +346,7 @@ main .welcome_section img {
 
 .contact {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 6em;
+  margin-bottom: 4em;
 }
 .contact .contact_container {
   width: 95%;
@@ -436,5 +436,39 @@ main .welcome_section img {
   font-weight: 600;
   width: 60%;
   border-radius: 4em;
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 0 1em 1em 1em #a5a5a5;
+}
+
+.footer_container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_container .footer_content {
+  font-family: "Open Sans", sans-serif;
+}
+.footer_container .footer_content .footer_title {
+  font-size: 3.5em;
+  font-weight: 300;
+  color: #08A6E4;
+}
+.footer_container .footer_content .all_rights_reserved {
+  color: #A5A5A5;
+  padding: 0.5em 0;
+}
+.footer_container .footer_social {
+  align-self: center;
+}
+.footer_container .footer_social img {
+  padding-right: 1em;
+}
+.footer_container .footer_social .tw {
+  padding-left: 1em;
 }
 /*# sourceMappingURL=main.css.map */
