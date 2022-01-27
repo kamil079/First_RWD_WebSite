@@ -33,6 +33,28 @@ header .header_container nav .burger_menu span {
   background: #08A6E4;
   margin-top: 0.3em;
 }
+header .header_container nav .menu_content {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  top: 7em;
+  height: 40%;
+  width: 100%;
+  padding: 0 2em;
+  background: #ffffff;
+}
+header .header_container nav .menu_content a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  color: #A5A5A5;
+}
 
 main .welcome_section {
   width: 100vw;
