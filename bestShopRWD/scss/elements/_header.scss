@@ -37,14 +37,18 @@ header {
 
             .menu_content {
                 visibility: hidden;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
+
                 position: absolute;
                 left: 0;
                 top: 7em;
+
                 height: 40%;
                 width: 100%;
+                
                 padding: 0 2em;
 
                 background: $color-white;
@@ -88,18 +92,35 @@ header {
 
                 .menu_content {
                     visibility: visible;
+
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
+
                     left: 20%;
                     top: 0em;
                     height: 60px;
+
                     width: auto;
+
                     padding: 2em;
 
                     a {
                         margin-left: 5em;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        .header_container {
+            nav {
+                .menu_content {
+                    left: 40%;
+
                 }
             }
         }

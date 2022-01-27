@@ -67,3 +67,12 @@ main {
         }
     }
 }
+
+@media (min-width: 1024px) {
+
+    main {
+        .welcome_section {
+            height: 75vh;
+        }
+    }
+}

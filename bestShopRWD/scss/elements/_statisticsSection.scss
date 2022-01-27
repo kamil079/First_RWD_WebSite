@@ -90,7 +90,7 @@
 
         .stats_container {
             width: 100%;
-            
+
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -99,5 +99,14 @@
                 margin: 0;
             }
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .web_statistics .info_stats .stats_logo {
+        width: 6em;
+    }
+    .web_statistics .info_stats .stats_descriptions {
+        width: 7em;
     }
 }

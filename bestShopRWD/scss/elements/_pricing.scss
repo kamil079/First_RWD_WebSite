@@ -174,3 +174,13 @@
         box-shadow: 0 0 0.3em $color-primary;
     }
 }
+
+@media (min-width: 1024px) {
+    .pricing .pricing_container .pricing_boxes .price_box {
+        width: 40%;
+    }
+    .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+        width: 45%;
+        box-shadow: 0 0 0.3em $color-primary;
+    }
+}

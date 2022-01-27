@@ -133,3 +133,38 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .contact {
+        margin-top: 8em;
+
+        .contact_container {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 0 5em;
+            .contact_content_container {
+                h3 {
+                    margin-top: 0;
+                }
+
+                .contact_txt {
+                    padding: 1em 0;
+                }
+
+                .contact_info_container {
+                    flex-direction: row;
+
+                    a {
+                        font-size: 1.5em;
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            .contact_form {
+                width: 50%;
+            }
+        }
+    }
+}

@@ -75,6 +75,11 @@ header .header_container nav .menu_content a {
     margin-left: 5em;
   }
 }
+@media (min-width: 1024px) {
+  header .header_container nav .menu_content {
+    left: 40%;
+  }
+}
 main .welcome_section {
   width: 100vw;
   height: calc(100vh - 7em);
@@ -124,6 +129,11 @@ main .welcome_section img {
 @media (min-width: 793px) {
   main .welcome_section {
     height: calc(100vh - 6em);
+  }
+}
+@media (min-width: 1024px) {
+  main .welcome_section {
+    height: 75vh;
   }
 }
 .web_statistics {
@@ -201,6 +211,15 @@ main .welcome_section img {
   }
   .web_statistics .stats_container .info_stats {
     margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .web_statistics .info_stats .stats_logo {
+    width: 6em;
+  }
+
+  .web_statistics .info_stats .stats_descriptions {
+    width: 7em;
   }
 }
 .about {
@@ -288,6 +307,103 @@ main .welcome_section img {
   border-radius: 0.5em;
 }
 
+@media (min-width: 1024px) {
+  .about .about_container {
+    width: 80%;
+    flex-direction: row-reverse;
+  }
+  .about .about_container .about_img_container .about_photo {
+    width: 40em;
+    margin-top: 5em;
+    align-self: end;
+  }
+  .about .about_container .about_img_container::before {
+    top: 20%;
+    left: 75%;
+    height: 17em;
+    width: 17em;
+  }
+  .about .about_container .content_about {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5em;
+    padding-bottom: 6em;
+  }
+  .about .about_container .content_about .about_title {
+    margin: 0;
+  }
+  .about .about_container .content_about .about_txt {
+    padding: 2em 0;
+    font-size: 1.8em;
+  }
+  .about .about_container .content_about::after {
+    content: "";
+    height: 0.3em;
+    width: 100%;
+    background: #FB3B64;
+  }
+  .about :nth-child(2) {
+    flex-direction: row;
+  }
+  .about :nth-child(2) .about_img_container .about_photo {
+    width: 45em;
+  }
+  .about :nth-child(2) .about_img_container::before {
+    top: 18%;
+    left: 3%;
+    height: 35em;
+    width: 35em;
+  }
+  .about :nth-child(2) .content_about {
+    padding-right: 0;
+  }
+  .about :nth-child(2) .content_about .about_title {
+    margin: 0;
+  }
+  .about :nth-child(2) .content_about .about_txt {
+    padding: 2em 0;
+    font-size: 1.8em;
+  }
+  .about :nth-child(2) .content_about::after {
+    content: "";
+    height: 0.3em;
+    width: 100%;
+    background: #08A6E4;
+  }
+  .about .last_one {
+    background: #F7F7F7;
+    box-shadow: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  .about .last_one .about_img_container .about_photo {
+    width: 30em;
+    box-sizing: content-box;
+  }
+  .about .last_one .about_img_container::before {
+    top: 8%;
+    left: 62%;
+    width: 100%;
+    height: 100%;
+  }
+  .about .last_one .content_about {
+    background: #ffffff;
+    flex-direction: column-reverse;
+    position: relative;
+    padding: 4em;
+    margin-right: 8em;
+    border-radius: 1em;
+  }
+  .about .last_one .content_about .about_txt {
+    background: transparent;
+  }
+  .about .last_one .content_about::after {
+    background: #55DFB4;
+    position: absolute;
+    width: 85%;
+    margin-bottom: 3em;
+  }
+}
 .pricing {
   font-family: "Raleway", sans-serif;
 }
@@ -418,6 +534,16 @@ main .welcome_section img {
     box-shadow: 0 0 0.3em #08A6E4;
   }
 }
+@media (min-width: 1024px) {
+  .pricing .pricing_container .pricing_boxes .price_box {
+    width: 40%;
+  }
+
+  .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+    width: 45%;
+    box-shadow: 0 0 0.3em #08A6E4;
+  }
+}
 .contact {
   font-family: "Raleway", sans-serif;
   margin-bottom: 4em;
@@ -519,6 +645,32 @@ main .welcome_section img {
   .contact .contact_container .contact_form .btn_consent_send {
     width: 30%;
     align-self: end;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    margin-top: 8em;
+  }
+  .contact .contact_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5em;
+  }
+  .contact .contact_container .contact_content_container h3 {
+    margin-top: 0;
+  }
+  .contact .contact_container .contact_content_container .contact_txt {
+    padding: 1em 0;
+  }
+  .contact .contact_container .contact_content_container .contact_info_container {
+    flex-direction: row;
+  }
+  .contact .contact_container .contact_content_container .contact_info_container a {
+    font-size: 1.5em;
+    margin-right: 1em;
+  }
+  .contact .contact_container .contact_form {
+    width: 50%;
   }
 }
 .footer {
