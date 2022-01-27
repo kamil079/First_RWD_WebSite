@@ -56,6 +56,25 @@ header .header_container nav .menu_content a {
   color: #A5A5A5;
 }
 
+@media (min-width: 793px) {
+  header .header_container nav .burger_menu {
+    visibility: hidden;
+  }
+  header .header_container nav .menu_content {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    left: 20%;
+    top: 0em;
+    height: 60px;
+    width: auto;
+    padding: 2em;
+  }
+  header .header_container nav .menu_content a {
+    margin-left: 5em;
+  }
+}
 main .welcome_section {
   width: 100vw;
   height: calc(100vh - 7em);
@@ -102,6 +121,11 @@ main .welcome_section img {
   height: 50%;
 }
 
+@media (min-width: 793px) {
+  main .welcome_section {
+    height: calc(100vh - 6em);
+  }
+}
 .web_statistics {
   font-family: "Raleway", sans-serif;
 }
@@ -161,6 +185,24 @@ main .welcome_section img {
   top: 4%;
 }
 
+@media (min-width: 793px) {
+  .web_statistics {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .web_statistics .stats_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .web_statistics .stats_container .info_stats {
+    margin: 0;
+  }
+}
 .about {
   background: #F7F7F7;
   font-family: "Raleway", sans-serif;
@@ -366,6 +408,16 @@ main .welcome_section img {
   background: #55DFB4;
 }
 
+@media (min-width: 793px) {
+  .pricing .pricing_container .pricing_boxes .price_box {
+    width: 50%;
+  }
+
+  .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+    width: 60%;
+    box-shadow: 0 0 0.3em #08A6E4;
+  }
+}
 .contact {
   font-family: "Raleway", sans-serif;
   margin-bottom: 4em;
@@ -460,6 +512,15 @@ main .welcome_section img {
   border-radius: 4em;
 }
 
+@media (min-width: 793px) {
+  .contact .contact_container .contact_form .consent_area .form_checkbox input {
+    width: 20em;
+  }
+  .contact .contact_container .contact_form .btn_consent_send {
+    width: 30%;
+    align-self: end;
+  }
+}
 .footer {
   width: 100%;
   box-shadow: 0 1em 1em 1em #a5a5a5;

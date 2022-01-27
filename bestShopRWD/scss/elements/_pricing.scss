@@ -162,3 +162,15 @@
         }
     }
 }
+
+
+@media (min-width: 793px) {
+
+    .pricing .pricing_container .pricing_boxes .price_box {
+        width: 50%;
+    }
+    .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+        width: 60%;
+        box-shadow: 0 0 0.3em $color-primary;
+    }
+}

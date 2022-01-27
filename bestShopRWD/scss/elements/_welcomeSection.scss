@@ -1,5 +1,4 @@
 main {
-    
     .welcome_section {
         width: 100vw;
         height: calc(100vh - 7em);
@@ -51,12 +50,20 @@ main {
                 color: $color-white;
 
                 border-radius: 2em;
-                box-shadow: .3em 1em 1.4em lighten($color-primary, 45%);
+                box-shadow: 0.3em 1em 1.4em lighten($color-primary, 45%);
             }
         }
 
         img {
             height: 50%;
+        }
+    }
+}
+
+@media (min-width: 793px) {
+    main {
+        .welcome_section {
+            height: calc(100vh - 6em);
         }
     }
 }

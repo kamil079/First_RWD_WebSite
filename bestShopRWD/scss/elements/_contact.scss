@@ -113,3 +113,23 @@
         }
     }
 }
+
+@media (min-width: 793px) {
+    .contact {
+        .contact_container {
+            .contact_form {
+                .consent_area {
+                    .form_checkbox {
+                        input {
+                            width: 20em;
+                        }
+                    }
+                }
+                .btn_consent_send {
+                    width: 30%;
+                    align-self: end;
+                }
+            }
+        }
+    }
+}
