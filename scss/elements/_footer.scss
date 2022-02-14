@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    box-shadow: 0 1em 1em 1em #a5a5a5;
+}
+.footer_container {
+    width: 95%;
+
+    margin: 0 auto;
+    padding: 2em 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    .footer_content {
+        font-family: $font-open-sans;
+
+        .footer_title {
+            font-size: 3.5em;
+            font-weight: 300;
+            color: $color-primary;
+        }
+
+        .all_rights_reserved {
+            color: $color-grey;
+            padding: 0.5em 0;
+        }
+    }
+
+    .footer_social {
+        align-self: center;
+
+        img {
+            padding-right: 1em;
+        }
+
+        .tw {
+            padding-left: 1em;
+        }
+    }
+}

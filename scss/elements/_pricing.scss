@@ -1,0 +1,183 @@
+.pricing {
+    font-family: $font-raleway;
+
+    .pricing_container {
+        width: 93%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .pricing_title {
+            font-size: 4em;
+            font-weight: 400;
+
+            display: block;
+            order: 1;
+
+            margin: 1.5em;
+        }
+
+        .pricing_boxes {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            position: relative;
+
+            .price_box {
+                width: 90%;
+                border: 1px solid $color-redish;
+                border-radius: 2em;
+                padding: 2em;
+
+                margin-bottom: 4em;
+
+                display: inherit;
+
+                .pricing_box_package {
+                    align-self: center;
+
+                    width: 50%;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .package_title {
+                        font-size: 1.8em;
+                        font-weight: 700;
+                    }
+
+                    .package_price {
+                        font-size: 4em;
+                        color: $color-redish;
+                        font-family: $font-open-sans;
+                        font-weight: 300;
+
+                        margin-top: 0.5em;
+                    }
+
+                    .package_promo {
+                        font-size: 1.2em;
+                        font-weight: 700;
+                    }
+                }
+
+                .pricing_box_items {
+                    width: 50%;
+
+                    font-family: $font-open-sans;
+                    position: relative;
+
+                    .pricing_box_item {
+                        margin: 1em;
+                        font-size: 1.5em;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            height: 1em;
+                            width: 1em;
+                            background-image: url(./../../assets/Checkmark-1.svg);
+                            background-repeat: no-repeat;
+                            background-position: bottom;
+                            left: -4%;
+                        }
+                    }
+                }
+            }
+
+            .price_box_btn {
+                a {
+                    color: #ffffff;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    text-align: center;
+                    text-decoration: none;
+                }
+
+                border-radius: 2em;
+
+                position: absolute;
+                left: 50%;
+                top: 26%;
+                transform: translateX(-50%);
+
+                padding: 1.5em;
+                width: 15em;
+
+                background: $color-redish;
+            }
+
+            .price_box:nth-child(1) {
+                .pricing_box_items {
+                    .pricing_box_item {
+                        &:nth-child(4)::before,
+                        &:last-child::before {
+                            content: "";
+                            background-image: url(./../../assets/Close.svg);
+                        }
+                    }
+                }
+            }
+            .price_box:nth-child(2) {
+                width: 95%;
+                border-color: $color-primary;
+
+                .package_price {
+                    color: $color-primary;
+                }
+
+                .pricing_box_items {
+                    .pricing_box_item {
+                        &:last-child::before {
+                            content: "";
+                            background-image: url(./../../assets/Close.svg);
+                        }
+                    }
+                }
+
+                .price_box_btn {
+                    top: 59%;
+                    background: $color-primary;
+                }
+            }
+
+            .price_box:nth-child(3) {
+                border-color: $color-green;
+
+                .package_price {
+                    color: $color-green;
+                }
+                .price_box_btn {
+                    top: 92.5%;
+                    background: $color-green;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 793px) {
+    .pricing .pricing_container .pricing_boxes .price_box {
+        width: 50%;
+    }
+    .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+        width: 60%;
+        box-shadow: 0 0 0.3em $color-primary;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pricing .pricing_container .pricing_boxes .price_box {
+        width: 40%;
+    }
+    .pricing .pricing_container .pricing_boxes .price_box:nth-child(2) {
+        width: 45%;
+        box-shadow: 0 0 0.3em $color-primary;
+    }
+}
