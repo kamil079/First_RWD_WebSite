@@ -145,7 +145,6 @@
                     top: 59%;
                     background: $color-primary;
                 }
-            
             }
 
             .price_box:nth-child(3) {
@@ -163,9 +162,7 @@
     }
 }
 
-
 @media (min-width: 793px) {
-
     .pricing .pricing_container .pricing_boxes .price_box {
         width: 50%;
     }
